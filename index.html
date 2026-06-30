@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Receitas</h1>
+    <h2>Vou mostrar algumas receitas que gosto</h2>
+</header>
+
+<main>
+
+    <h2 class="categoria">🍽️ Pratos Salgados</h2>
+
+    <div class="galeria">
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Onigiri_002.jpg"
+            alt="Oniguiri"
+            onclick="mostrarReceita('oniguiri')">
+            <p>Oniguiri</p>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Lasagne_-_stonesoup.jpg"
+            alt="Lasanha"
+            onclick="mostrarReceita('lasanha')">
+            <p>Lasanha</p>
+        </div>
+
+        <div class="card">
+            <img src="imagem(5).webp"
+            alt="Macarrão"
+            onclick="mostrarReceita('macarrao')">
+            <p>Macarrão de Gravata</p>
+        </div>
+
+        <div class="card">
+            <img src="imagem(4).jpg"
+            alt="Feijoada"
+            onclick="mostrarReceita('feijoada')">
+            <p>Feijoada</p>
+        </div>
+
+        <div class="card">
+    <img src="images (1).jpg"
+         alt="Strogonoff"
+         onclick="mostrarReceita('strogonoff')">
+         <p>Strogonoff</p>
+        </div>
+
+    </div>
+
+    <h2 class="categoria">🍰 Doces</h2>
+
+    <div class="galeria">
+        <div class="card">
+            <img src="imagem(2).jpg"
+            alt="Brigadeiro"
+            onclick="mostrarReceita('brigadeiro')">
+            <p>Brigadeiro</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400"
+            alt="Cookies"
+            onclick="mostrarReceita('cookies')">
+            <p>Cookies</p>
+        </div>
+
+        <div class="card">
+            <img src="imagem(3).webp"
+            alt="Bolo de Cenoura"
+            onclick="mostrarReceita('bolo')">
+            <p>Bolo de Cenoura</p>
+        </div>
+
+        <div class="card">
+            <img src="images.jpg"
+             alt="Suspiro"
+             onclick="mostrarReceita('suspiro')">
+            <p>Suspiro</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=400"
+            alt="Brownie"
+            onclick="mostrarReceita('brownie')">
+            <p>Brownie</p>
+        </div>
+
+    </div>
+
+    <section id="receita">
+        <h3>Clique em uma imagem para visualizar a receita.</h3>
+    </section>
+
+</main>
+
+<div class="interacoes">
+
+    <button onclick="curtir()">
+        ❤️ Curtidas <span id="likes">0</span>
+    </button>
+
+    <button onclick="descurtir()">
+        💔 Deslikes <span id="deslikes">0</span>
+    </button>
+
+    <button onclick="comentar()">
+        ⭐ Comentários <span id="comentarios">0</span>
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
