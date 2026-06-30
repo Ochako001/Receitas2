@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0d1b2a,#3a0ca3,#00b4d8);
+    min-height:100vh;
+    color:white;
+}
+
+/* CABEÇALHO */
+header{
+    text-align:center;
+    padding:30px;
+}
+
+h1{
+    font-size:3rem;
+    color:#8ecae6;
+}
+
+h2{
+    display:inline-block;
+    color:white;
+    border:3px solid cyan;
+    padding:10px 20px;
+    border-radius:15px;
+    margin-top:15px;
+}
+
+/* TITULOS DAS CATEGORIAS */
+.categoria{
+    text-align:center;
+    margin:40px 0 20px;
+    font-size:2rem;
+    color:cyan;
+}
+
+/* GALERIA */
+.galeria{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+/* CARD */
+.card{
+    text-align:center;
+}
+
+.card img{
+    width:220px;
+    height:150px;
+    object-fit:cover;
+    border-radius:15px;
+    border:3px solid cyan;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.card img:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 20px cyan;
+}
+
+.card p{
+    margin-top:10px;
+    font-size:1.2rem;
+}
+
+/* AREA DA RECEITA */
+#receita{
+    background:rgba(255,255,255,0.1);
+    width:80%;
+    margin:40px auto;
+    padding:25px;
+    border-radius:20px;
+    border:2px solid cyan;
+}
+
+#receita h3{
+    color:cyan;
+    margin-bottom:15px;
+}
+
+/* INTERAÇÕES */
+.interacoes{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.interacoes button{
+    margin:10px;
+    padding:12px 20px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.interacoes button:hover{
+    transform:scale(1.1);
+}
+
+/* BOTÕES */
+.interacoes button:nth-child(1){
+    background:#ff4d6d;
+    color:white;
+}
+
+.interacoes button:nth-child(2){
+    background:#7209b7;
+    color:white;
+}
+
+.interacoes button:nth-child(3){
+    background:#00b4d8;
+    color:white;
+}
